@@ -11,14 +11,16 @@ public class CodigoMenuPrim : MonoBehaviour
     public void Jugar()
     {
         anim.Play("FadeOut");
+        MenuPrincipal.SetActive(false);
         Invoke("CargarNivel", 1f);
-       
+
     }
-    void CargarNivel()
+    void CargarNivel() 
     {
         //Cargar la escena del nivel
         SceneManager.LoadScene("Nivel");
     }
+    
     // Boton para salir del juego
     public void Salir()
     {
