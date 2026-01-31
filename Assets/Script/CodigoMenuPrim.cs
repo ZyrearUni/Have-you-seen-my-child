@@ -6,9 +6,12 @@ public class CodigoMenuPrim : MonoBehaviour
 {
     public GameObject MenuConfig;
     public GameObject MenuPrincipal;
+    public Animator anim;
     // Boton para empezar el juego
     public void Jugar()
     {
+        anim.Play("FadeOut");
+        
         //Cargar la escena del nivel
         SceneManager.LoadScene("Nivel");
     }
