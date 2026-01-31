@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class obtainmask : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject esteBoton;
+    public GameObject botonMascara;
+    public GameObject botonSalirHabitacion;
 
-    // Update is called once per frame
-    void Update()
+    public void OnClick()
     {
+        esteBoton.SetActive(false);
+
+        botonMascara.SetActive(true);
+        botonSalirHabitacion.SetActive(true);
         
     }
 }
