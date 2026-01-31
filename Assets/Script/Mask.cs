@@ -7,12 +7,24 @@ public class Mask : MonoBehaviour
     public List<GameObject> maskedItems;
     public List<GameObject> unmaskedItems;
     public List<GameObject> spriteChange;
-
     public List<Sprite> sprites;
     public Animator anim;
+    public GameObject animPonermask;
+
     public void OnClick()
     {
         isMaskOn = !isMaskOn;
+
+        if (isMaskOn == true)
+        {
+            animPonermask.SetActive(true);
+            anim.Play("PonerMascara");
+        }
+        if (isMaskOn == false)
+        {
+            animPonermask.SetActive(true);
+            anim.Play("QuitarMascara");
+        }
 
         Invoke("ChangeSprites", 2f);
     }
@@ -28,10 +40,7 @@ public class Mask : MonoBehaviour
         {
             unmaskedItems[i].SetActive(!isMaskOn);
         }
-        if (isMaskOn == true)
-        {
-         anim.Play("PonerMascara");
-        }
+      
         /*
          * TODO: Make this shit work well
          * 
