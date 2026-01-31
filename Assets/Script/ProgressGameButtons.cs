@@ -3,17 +3,30 @@ using UnityEngine;
 public class ProgressGameButtons : MonoBehaviour
 {
     public GameObject daughterRoom;
-    private bool foundMask = false;
+
     private bool madeLunch = false;
     private bool grabbedHomework = false;
 
 
-    public void FoundMask()
+    void Start()
     {
-        foundMask = true;
+        daughterRoom.SetActive(false);
+
+        var bags = FindObjectsOfType<Bag>();
+        var backpacks = FindObjectsOfType<Backpack>();
+
+        foreach (var bag in bags)
+        {
+            bag.MadeLunch += MadeLunchObj;
+        }
+
+        foreach (var backpack in backpacks)
+        {
+            backpack.GrabbedHomework += GrabbedHomeworkObj;
+        }
     }
 
-    public void MadeLunch()
+    public void MadeLunchObj()
     {
         madeLunch = true;
         if(grabbedHomework)
@@ -22,7 +35,7 @@ public class ProgressGameButtons : MonoBehaviour
         }
     }
 
-    public void GrabbedHomework()
+    public void GrabbedHomeworkObj()
     {
         grabbedHomework = true;
         if (madeLunch)
