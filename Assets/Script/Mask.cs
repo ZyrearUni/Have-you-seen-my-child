@@ -1,16 +1,18 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Mask : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public bool isMaskOn = false;
+    public List<GameObject> buttons;    
 
-    // Update is called once per frame
-    void Update()
+    public void OnClick()
     {
-        
+        isMaskOn = !isMaskOn;
+
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            buttons[i].SetActive(isMaskOn);
+        }
     }
 }
