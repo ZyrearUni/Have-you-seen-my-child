@@ -5,7 +5,7 @@ public class ProgressGameButtons : MonoBehaviour
     public GameObject daughterRoom;
 
     private bool madeLunch = false;
-    private bool grabbedHomework = false;
+    private bool grabbedHomework = true;
 
 
     void Start()
@@ -28,6 +28,7 @@ public class ProgressGameButtons : MonoBehaviour
 
     public void MadeLunchObj()
     {
+        Debug.Log("POR QUÉ NO FUNCIONAS RAAAAAAAAAAH");
         madeLunch = true;
         if(grabbedHomework)
         {

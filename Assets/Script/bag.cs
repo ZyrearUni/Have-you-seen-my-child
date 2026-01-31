@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class Bag : MonoBehaviour
@@ -15,8 +16,7 @@ public class Bag : MonoBehaviour
     {
         if (hasGocata && hasMansana && hasMedisina)
         {
-            MadeLunch.Invoke();
-            transform.parent.GetComponent<SpriteRenderer>().sprite = fullBag;
+            transform.parent.GetComponent<Image>().sprite = fullBag;
         }
     }
 

@@ -7,7 +7,6 @@ public class Backpack : MonoBehaviour
 
     public void OnClick()
     {
-        GrabbedHomework.Invoke();
         transform.parent.gameObject.SetActive(false);
     }
 }

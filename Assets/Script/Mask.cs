@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class Mask : MonoBehaviour
@@ -41,12 +42,10 @@ public class Mask : MonoBehaviour
             unmaskedItems[i].SetActive(!isMaskOn);
         }
       
-        /*
-         * TODO: Make this shit work well
-         * 
+       /*
         for (int i = 0; i < spriteChange.Count; i++)
         {
-            spriteChange[i].GetComponent<SpriteRenderer>().sprite = sprites[i];
+            spriteChange[i].GetComponent<Image>().sprite = sprites[i];
         }*/
     }
 }
