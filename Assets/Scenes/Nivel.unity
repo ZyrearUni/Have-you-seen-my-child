@@ -2569,7 +2569,7 @@ GameObject:
   - component: {fileID: 1107681538}
   - component: {fileID: 1107681537}
   m_Layer: 5
-  m_Name: bolsa
+  m_Name: mochila
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2640,7 +2640,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1687436343}
-        m_TargetAssemblyTypeName: Bag, Assembly-CSharp
+        m_TargetAssemblyTypeName: Backpack, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -2665,7 +2665,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 616116610}
         m_TargetAssemblyTypeName: ProgressGameButtons, Assembly-CSharp
-        m_MethodName: MadeLunchObj
+        m_MethodName: GrabbedHomeworkObj
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2695,7 +2695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3369064732119132394, guid: 2c93ba3b27df4534e86e1ac2eb1a622d, type: 3}
+  m_Sprite: {fileID: 5124475773856084676, guid: 291f8c21c806b1f4ca1df807811c3218, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4345,7 +4345,7 @@ GameObject:
   - component: {fileID: 1687436342}
   - component: {fileID: 1687436343}
   m_Layer: 5
-  m_Name: bolsicaobjetivo
+  m_Name: mochilaobjetivo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4379,10 +4379,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1687436341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb19e9bdda374274da0c0e88d3a2d8a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 23d25ffc823ded6428126b31753261e1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bag
-  fullBag: {fileID: -6731779338865931494, guid: 46df20e115d7a1b4295a4ebfd6f0488c, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::Backpack
+  fullBackpack: {fileID: 2194968148291728671, guid: 02b82bb131e736644a7dc6fb4f88621a, type: 3}
 --- !u!1 &1690760653
 GameObject:
   m_ObjectHideFlags: 0
