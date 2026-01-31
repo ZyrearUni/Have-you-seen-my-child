@@ -3,10 +3,15 @@ using System;
 
 public class Backpack : MonoBehaviour
 {
-    public event Action GrabbedHomework; //objective completed
+    public Sprite fullBackpack;
 
     public void OnClick()
     {
         transform.parent.gameObject.SetActive(false);
+    }
+
+    private void Enable()
+    {
+        transform.parent.getComponent<Button>().interactable = true;
     }
 }

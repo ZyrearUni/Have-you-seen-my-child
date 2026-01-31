@@ -5,30 +5,10 @@ public class ProgressGameButtons : MonoBehaviour
     public GameObject daughterRoom;
 
     private bool madeLunch = false;
-    private bool grabbedHomework = true;
-
-
-    void Start()
-    {
-        daughterRoom.SetActive(false);
-
-        var bags = FindObjectsOfType<Bag>();
-        var backpacks = FindObjectsOfType<Backpack>();
-
-        foreach (var bag in bags)
-        {
-            bag.MadeLunch += MadeLunchObj;
-        }
-
-        foreach (var backpack in backpacks)
-        {
-            backpack.GrabbedHomework += GrabbedHomeworkObj;
-        }
-    }
+    private bool grabbedHomework = false;
 
     public void MadeLunchObj()
     {
-        Debug.Log("POR QUÉ NO FUNCIONAS RAAAAAAAAAAH");
         madeLunch = true;
         if(grabbedHomework)
         {
