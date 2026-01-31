@@ -166,10 +166,10 @@ TextureImporter:
       name: Confi_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 5922
-        height: 2497
+        x: 524
+        y: 66
+        width: 4884
+        height: 2365
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

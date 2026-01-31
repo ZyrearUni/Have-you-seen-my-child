@@ -136,10 +136,10 @@ TextureImporter:
       name: IMG_1980_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 5922
-        height: 2497
+        x: 521
+        y: 76
+        width: 4873
+        height: 2359
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

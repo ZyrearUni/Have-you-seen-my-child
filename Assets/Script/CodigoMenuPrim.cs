@@ -7,20 +7,23 @@ public class CodigoMenuPrim : MonoBehaviour
     public GameObject MenuConfig;
     public GameObject MenuPrincipal;
     public Animator anim;
+    public GameObject fade;
+    public GameObject Imagen;
     // Boton para empezar el juego
     public void Jugar()
     {
-        anim.Play("FadeOut");
+        Imagen.SetActive(true);
+        fade.SetActive(true);
         MenuPrincipal.SetActive(false);
-        Invoke("CargarNivel", 1f);
-
+        anim.Play("FadeOut");
+        Invoke("CargarNivel", 1.6f);
     }
     void CargarNivel() 
     {
-        //Cargar la escena del nivel
+        
         SceneManager.LoadScene("Nivel");
     }
-    
+
     // Boton para salir del juego
     public void Salir()
     {
@@ -33,6 +36,7 @@ public class CodigoMenuPrim : MonoBehaviour
         //Quitar el menu principal y activar el de configuraciones
         MenuConfig.SetActive(true);
         MenuPrincipal.SetActive(false);
+        Imagen.SetActive(false);
     }
     // Boton para volver al menu principal
     public void Volver()
@@ -40,5 +44,6 @@ public class CodigoMenuPrim : MonoBehaviour
         //Quitar el menu de configuraciones y activar el principal
         MenuConfig.SetActive(false);
         MenuPrincipal.SetActive(true);
+        Imagen.SetActive(true);
     }
 }

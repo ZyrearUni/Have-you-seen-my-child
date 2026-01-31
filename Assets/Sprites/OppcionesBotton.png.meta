@@ -145,10 +145,10 @@ TextureImporter:
       name: OppcionesBotton_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 5922
-        height: 2497
+        x: 497
+        y: 73
+        width: 4890
+        height: 2351
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
