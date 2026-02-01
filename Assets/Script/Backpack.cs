@@ -5,6 +5,7 @@ using System;
 public class Backpack : MonoBehaviour
 {
     private bool hasHomework = false;
+    private bool hasReports = false;
 
     public Sprite fullBackpack;
 
@@ -16,8 +17,23 @@ public class Backpack : MonoBehaviour
         }
     }
 
+    public void Deberes()
+    {
+        hasHomework = true;
+        Enable();
+    }
+
+    public void Reportes()
+    {
+        hasReports = true;
+        Enable();
+    }
+
     private void Enable()
     {
-        transform.parent.GetComponent<Button>().interactable = true;
+        if (hasHomework && hasReports)
+        {
+            transform.parent.GetComponent<Button>().interactable = true;
+        }
     }
 }
