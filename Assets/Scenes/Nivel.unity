@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f436e0efbfdd114fa6b88ab2a70a7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeManager
-  fade: {fileID: 0}
+  fade: {fileID: 385937074}
 --- !u!95 &385937077
 Animator:
   serializedVersion: 7
