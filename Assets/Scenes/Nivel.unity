@@ -615,8 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12362841b9261e04daf986cd50e60767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlavorButton
-  flavorText: According to all known laws of aviation, a bee should not be able to
-    fly. Its wings are too weak to blablabla bee movie reference right here
+  flavorText: Un armario muy colorido!
   textContainer: {fileID: 618752977}
 --- !u!4 &268183684
 Transform:
@@ -1021,7 +1020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12362841b9261e04daf986cd50e60767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlavorButton
-  flavorText: "Eres t\xFA."
+  flavorText: Eres tu
   textContainer: {fileID: 618752977}
 --- !u!1 &385937074
 GameObject:
@@ -2067,7 +2066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12362841b9261e04daf986cd50e60767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlavorButton
-  flavorText: "\"\xA1ELLIE!\""
+  flavorText: '"ELI!"'
   textContainer: {fileID: 618752977}
 --- !u!1 &618752975
 GameObject:
@@ -2103,8 +2102,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49.8836, y: -161.17}
-  m_SizeDelta: {x: 645.2112, y: 113.4}
+  m_AnchoredPosition: {x: 147.2088, y: -173.93}
+  m_SizeDelta: {x: 450.5608, y: 87.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &618752977
 MonoBehaviour:
@@ -2128,14 +2127,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 40676e2024e463041bbb834e0eb7dacc, type: 2}
+  m_sharedMaterial: {fileID: -6288698143385826462, guid: 40676e2024e463041bbb834e0eb7dacc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2153,10 +2152,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -2338,7 +2337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12362841b9261e04daf986cd50e60767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlavorButton
-  flavorText: "\"\xBFEllie? \xBFEst\xE1s aqu\xED?\""
+  flavorText: "\"Eli? \xBFEst\xE1s aqu\xED\""
   textContainer: {fileID: 618752977}
 --- !u!1 &670385612
 GameObject:
@@ -2629,7 +2628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12362841b9261e04daf986cd50e60767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlavorButton
-  flavorText: aaaaaaaaaaaaaaaaaaaaaaaa
+  flavorText: Domingo, Mayo
   textContainer: {fileID: 618752977}
 --- !u!1 &902472294
 GameObject:
@@ -2668,7 +2667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -318.3, y: -158.17}
+  m_AnchoredPosition: {x: -208.43, y: -144.94}
   m_SizeDelta: {x: 44.7488, y: 36.123}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &902472296
@@ -2678,7 +2677,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902472294}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -3118,7 +3117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12362841b9261e04daf986cd50e60767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlavorButton
-  flavorText: "\xA1Eres t\xFA! Te ves genial"
+  flavorText: Eres tu! Te ves genial
   textContainer: {fileID: 618752977}
 --- !u!1 &986262942
 GameObject:
@@ -3164,7 +3163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12362841b9261e04daf986cd50e60767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlavorButton
-  flavorText: aaaaaaaaaaaaaaaaaaaaaaaa
+  flavorText: Muchos trajes negros
   textContainer: {fileID: 618752977}
 --- !u!1 &1042513977
 GameObject:
@@ -3842,7 +3841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Mask
   isMaskOn: 0
   CocinaAbierta: {fileID: 245642114440324683, guid: aefd0316f70f8fc4fb95d1aada208856, type: 3}
-  CocinaAbiertaMasked: {fileID: 0}
+  CocinaAbiertaMasked: {fileID: -2821276819632727204, guid: 0094e7c0f90754d4197317b8f3b53ada, type: 3}
   maskedItems:
   - {fileID: 2146478826}
   - {fileID: 1492746716}
@@ -4714,8 +4713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -166.63, y: 54.5}
-  m_SizeDelta: {x: 217.2607, y: 193}
+  m_AnchoredPosition: {x: -171.81, y: 52.735}
+  m_SizeDelta: {x: 227.63, y: 201.6223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1388310650
 MonoBehaviour:
@@ -6627,7 +6626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -314.9, y: -115.6}
+  m_AnchoredPosition: {x: -218.7, y: -98}
   m_SizeDelta: {x: 65.2827, y: 54.4174}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1844719446
