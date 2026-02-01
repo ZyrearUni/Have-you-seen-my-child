@@ -10,8 +10,12 @@ public class Mask : MonoBehaviour
     private const int BLUE_MASKED = 131;
     private const int CHANNEL_UNMASKED = 255;
     private const int ALPHA = 255;
+    private const int COCINA = 4;
 
     public bool isMaskOn = false;
+    public Sprite CocinaAbierta;
+    public Sprite CocinaAbiertaMasked;
+
     public List<GameObject> maskedItems;
     public List<GameObject> unmaskedItems;
     public List<GameObject> spriteChange;
@@ -61,8 +65,8 @@ public class Mask : MonoBehaviour
        
         for (int i = 0; i < spriteChange.Count; i++)
         {
-            int j = isMaskOn ? 0 : 1;
-            //spriteChange[i].GetComponent<Image>().sprite = sprites[i].spriteToggle[j];
+            int j = isMaskOn ? 1 : 0;
+            spriteChange[i].GetComponent<Image>().sprite = sprites[i].spriteToggle[j];
         }
 
         for (int i = 0; i < addFilter.Count; i++)
@@ -76,5 +80,11 @@ public class Mask : MonoBehaviour
                 addFilter[i].GetComponent<Image>().color = new Color32(RED_MASKED, GREEN_MASKED, BLUE_MASKED, ALPHA);
             }
         }
+    }
+
+    public void OpenKitchenDrawer()
+    {
+        sprites[COCINA].spriteToggle[0] = CocinaAbierta;
+        sprites[COCINA].spriteToggle[1] = CocinaAbiertaMasked;
     }
 }
