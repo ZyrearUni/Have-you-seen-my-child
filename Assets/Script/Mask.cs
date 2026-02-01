@@ -5,6 +5,12 @@ using System.Collections.Generic;
 
 public class Mask : MonoBehaviour
 {
+    private const int RED_MASKED = 144;
+    private const int GREEN_MASKED = 131;
+    private const int BLUE_MASKED = 131;
+    private const int CHANNEL_UNMASKED = 255;
+    private const int ALPHA = 255;
+
     public bool isMaskOn = false;
     public List<GameObject> maskedItems;
     public List<GameObject> unmaskedItems;
@@ -61,7 +67,14 @@ public class Mask : MonoBehaviour
 
         for (int i = 0; i < addFilter.Count; i++)
         {
-
+            if (isMaskOn)
+            {
+                addFilter[i].GetComponent<Image>().color = new Color32(CHANNEL_UNMASKED, CHANNEL_UNMASKED, CHANNEL_UNMASKED, ALPHA);
+            }
+            else
+            {
+                addFilter[i].GetComponent<Image>().color = new Color32(RED_MASKED, GREEN_MASKED, BLUE_MASKED, ALPHA);
+            }
         }
     }
 }
