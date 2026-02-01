@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.Collections.Generic;
 
 public class Mask : MonoBehaviour
@@ -8,7 +9,16 @@ public class Mask : MonoBehaviour
     public List<GameObject> maskedItems;
     public List<GameObject> unmaskedItems;
     public List<GameObject> spriteChange;
-    public List<Sprite> sprites;
+
+    [System.Serializable]
+    public class serializableSprites
+    {
+        public List<Sprite> spriteToggle;
+    }
+    public List<serializableSprites> sprites;
+
+    public List<GameObject> addFilter;
+
     public Animator anim;
     public GameObject animPonermask;
 
@@ -27,7 +37,7 @@ public class Mask : MonoBehaviour
             anim.Play("QuitarMascara");
         }
 
-        Invoke("ChangeSprites", 2f);
+        Invoke("ChangeSprites", 1f);
     }
 
     private void ChangeSprites()
@@ -42,10 +52,16 @@ public class Mask : MonoBehaviour
             unmaskedItems[i].SetActive(!isMaskOn);
         }
       
-       /*
+       
         for (int i = 0; i < spriteChange.Count; i++)
         {
-            spriteChange[i].GetComponent<Image>().sprite = sprites[i];
-        }*/
+            int j = isMaskOn ? 0 : 1;
+            //spriteChange[i].GetComponent<Image>().sprite = sprites[i].spriteToggle[j];
+        }
+
+        for (int i = 0; i < addFilter.Count; i++)
+        {
+
+        }
     }
 }
